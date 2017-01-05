@@ -1,4 +1,4 @@
-# Assignment 2 #
+# Fault Tolerant & Scalable Expense Management Application for Managing Office Expenses #
 
 Built expense management application to achieve the following:
 
