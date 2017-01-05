@@ -16,7 +16,8 @@ Failure Detection
 
 ### Dynamic Load Balancing ###
 * A proxy server has been created to forward the subsequent requests to the applications to its different instances sequentially.
-* Implemented Round Robin algorithm to hit the application server instance URL in the list in the Redis server in a sequential manner
+* Implemented Round Robin algorithm to hit the application server instance URL in the list in the Redis server in a sequential manner.
+
 ### Failure Detection (via CircutBreaker) ###
 * Whenever a node reaches its CircuitBreaker's error count, the router should unregister the failed node from the routing table in Redis and forward the same request to the next available node.
 * In order to implement this a dictionary was created in CircuitBreaker.py to track the failures per server and remove the server form the Redis list if the server failed more than three times consecutively.
