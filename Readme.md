@@ -1,6 +1,7 @@
-# Fault Tolerant & Scalable Expense Management Application for Managing Office Expenses #
+# Fault Tolerant & Scalable Expense Management Application #
 
-Built expense management application to achieve the following:
+ 
+Built Expense Mananagement System developed in Assignment1([Link to Assignment 1 Github Repository](https://github.com/sidanasparsh/CMPE273-Assignment-1-Expense-Management-System)) to achieve the following:
 
 Dynamic Replica Registration
 Dynamic Load Balancing
@@ -11,8 +12,11 @@ Failure Detection
 ### Dynamic Replica Registration ###
 * As part of the node registration, whenever an instance of the expense management application will be lauched, it will auto-register to the own instance to the router (proxy server). This is being done through Redis Server:
 * Inserted the sever IP in a list created in Redis server whenever the server was run. Implemented it through:
+```
  r = redis.Redis('127.0.0.1', 6379)
+ 
  r.rpush('activeServersList', host + ":" + str(port))
+ ```
 
 ### Dynamic Load Balancing ###
 * A proxy server has been created to forward the subsequent requests to the applications to its different instances sequentially.
