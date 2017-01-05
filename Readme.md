@@ -3,9 +3,11 @@
  
 Built Expense Mananagement System developed in Assignment1([Link to Assignment 1 Github Repository](https://github.com/sidanasparsh/CMPE273-Assignment-1-Expense-Management-System)) to achieve the following:
 
-Dynamic Replica Registration
-Dynamic Load Balancing
-Failure Detection
+**Dynamic Replica Registration**
+
+**Dynamic Load Balancing**
+
+**Failure Detection**
 
 ## Features:##
 
